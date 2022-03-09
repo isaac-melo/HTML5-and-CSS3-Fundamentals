@@ -4,23 +4,38 @@
     <meta charset="utf-8" />
     <title>Links</title>
   </head>
+  <style>
+    a:link {
+      color: red;
+      text-decoration: none;
+    }
+    a:visited {
+      color: green;
+    }
+    a:hover {
+      color: blue;
+    }
+  </style>
 
   <body>
     <h1>Links</h1>
 
     <h2>Internal link</h2>
-    <a href="other-pages/linked-page1.html">linked page</a>
+    <a href="linked-page1.html">linked page</a>
 
     <h2>External link</h2>
-    http://www.wikipedia.org/
+    <a href="http://www.wikipedia.org/" target="_blank">wikipedia</a>
 
     <br /><br />
-    <img
-      src="golden-gate-sm.jpg"
-      alt="the golden gate bridge"
-      width="500"
-      height="213"
-    />
+    <a href="other-pages/linked-page2.html"
+      ><img
+        src="golden-gate-sm.jpg"
+        alt="the golden gate bridge"
+        width="500"
+        height="213"
+    /></a>
+    <br />
+    <a href="mailto:someone@somedomain.com?Subject=Contact">Contact us</a>x
 
     <h1>Navigation Links</h1>
     <ul>
