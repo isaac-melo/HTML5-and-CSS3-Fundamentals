@@ -4,10 +4,17 @@
     <meta charset="utf-8" />
     <title>Layout</title>
     <style>
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
       div {
         width: 500px;
-        height: 200px;
+        float: left;
       }
+
       #block1 {
         background-color: lightblue;
       }
@@ -17,10 +24,14 @@
       #block3 {
         background-color: pink;
       }
+      img {
+        float: left;
+      }
     </style>
   </head>
 
   <body>
+    <img src="golden-gate-sm.jpg" width="280" height="513" />
     <div id="block1">
       <h1>Heading 1</h1>
       <p>
