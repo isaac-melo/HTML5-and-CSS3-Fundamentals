@@ -1,5 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0auto;
+  width: 960px;
 }
 h1,
 h2,
@@ -10,12 +12,20 @@ ul {
   list-style-image: url("images/tiny-coffee-cup.gif");
 }
 a:link a:visited {
-  text-decoration: none;
   color: brown;
   font-weight: bold;
 }
 a:hover {
   color: black;
+}
+aside {
+  width: 280px;
+  float: right;
+  background-color: tan;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  margin-left: 20px;
 }
 nav ul {
   list-style-type: none;
@@ -30,4 +40,8 @@ nav a:visited {
 }
 nav a:hover {
   background-color: black;
+}
+.photo-left {
+float: left;
+margin-right:20px; 
 }
