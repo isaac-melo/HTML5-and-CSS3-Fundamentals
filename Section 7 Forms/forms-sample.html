@@ -3,45 +3,87 @@
   <head>
     <meta charset="utf-8" />
     <title>Forms</title>
-    <style></style>
+    <style>
+      label {
+      display: block;
+      width: 200;
+      float: left;
+      text-align: right;
+      margin: 10px 5px;
+      clear:left;
+      }
+      input,select,textarea {
+        margin: 10px 5px;
+        vertical-align: middle;
+      }
+      .checks {
+        vertical-align: bottom  ;
+      }
+      #submit {
+        margin-left: 200px;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Forms</h1>
-    <form>
-      First Name:
+    <form action="form-submit,php" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+       <label for="first-name">First Name:</label> 
+        <input type="text" name="first name" autofocus required id="first-name"/>
+        <br />
+       <label for="Email"></label> Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="enter a valid email address"
+          required id="email"
+        />
+      </fieldset>
 
       <br />
-      Email:
+      <label for="Checkbox"></label>Checkbox:</label>
+      <input class="checks" type="check box" name="check" value="ch1"id="Checkbox" />check1
+
+      <input class="checks"type="check box" name="check" value="ch2" id="Checkbox"/>check2 
+      <br />
+     <label for="Radio"></label> Radio:</label>
+      <input class="checks"type="radio" name="radio" value="r1" id="Radio"/> radio 1
+      <input class="checks"type="radio" name="radio" value="r2" id="Radio"/> radio 2
+      <br />
+     <label for="Message"></label> Message:</label>
+      <textarea name="message" id="Message"></textarea>
+      <br />
+     <label for="Dropdown"></label> Dropdown:</label>
+      <select name="dropdown" id="Dropdown"></select>
+      <select>
+        <option value="o1">Option 1</option>
+        <option value="o2">Option 2</option>
+        <option value="o3">Option 3</option>
+        <option value="o4">Option 4</option>
+        <option value="o5">Option 5</option>
+      </select>
 
       <br />
-      Checkbox: check 1 check 2
+    <label for="Password"></label>  Password:</label>
+      <input type="password" name="password" id="Password"/>
       <br />
-      Radio: radio 1 radio 2
+     <label for="Number"></label> Number:</label>
+      <input type="number" name="number" id="Number"/>
       <br />
-      Message:
-
+     <label for="Range"></label> Range: 1<input type="range" name="range" min="1" max="10" value="1" id="Range"/> 10</label>
       <br />
-      Dropdown: Option 1 Option 2 Option 3 Option 4 Option 5
-
+     <label for="Date"></label> Date:</label>
+      <input type="date" name="date" id="Date"/>
       <br />
-      Password:
-
+     <label for="Time"></label> Time:</label>
+      <input type="time" name="time" id="Time"/>
       <br />
-      Number:
-
+     <label for="Color"></label> Color:</label>
+      <input type="color" name="color" id="C"/>
       <br />
-      Range: 1 10
-      <br />
-      Date:
-
-      <br />
-      Time:
-
-      <br />
-      Color:
-
-      <br />
+      <input id="submit" value="Send"id="email" />
     </form>
   </body>
 </html>
